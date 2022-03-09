@@ -48,10 +48,11 @@ For advanced users as well the R-library can be download and installed
 separately. It offers more features to modify the analysis and the graphical
 output then the GUI but needs the usual knowledge of the R statisical programming language.
 
-You can install the package directly from github using the following line of code:
+You can install the package directly from Github using the following lines of code from within your R-console:
 
 ```
-install.packages("https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.8.0.tar.gz",repos=NULL)
+URL="https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.8.0.tar.gz"
+install.packages(URL,repos=NULL)
 library(asg)
 ```
 
@@ -66,5 +67,39 @@ plot(as,layout="sam")
 
 A good place to start is the help page of the *asg.new* function.
 
+### TODO's
+
+* repository asg for the library
+* code release for the GUI
+
+### Bugs
+
+Please use the Github isses page to report problems and to give suggestions:
+
+[https://github.com/mittelmark/snha-gui/issues](https://github.com/mittelmark/snha-gui/issues)
+
+### License 
+
+The code is released using the MIT license.
+
+Copyright 2022, Detlef Groth, University of Potsdam, Germany
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
