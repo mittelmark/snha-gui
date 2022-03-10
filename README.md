@@ -7,6 +7,11 @@ association chains. For more background on the theory of this algorithm have a l
 * Groth, D., Scheffler, C., & Hermanussen, M. (2019). Body height in stunted Indonesian children depends directly on parental education and not via a nutrition mediated pathway-Evidence from tracing association chains by St. Nicolas House Analysis. Anthr Anz, 76(5), 445-451. [DOI: 10.1127/anthranz/2019/1027](https://doi.org/10.1127/anthranz/2019/1027)
 * Hermanussen, M., Aßmann, C., & Groth, D. (2021). Chain Reversion for Detecting Associations in Interacting Variables - St. Nicolas House Analysis. Int J Env Res Pub Health, 18(4), 1741. [DOI: 10.3390/ijerph18041741](https://doi.org/10.3390/ijerph18041741)
 
+The graphical application and the library needs an installed version of [R](https://www.r-project.org) on
+your computer. To use this software from this page please install R first
+either using your package manager or usually for Windows and Mac-OSX using the download facilities of the R-project:
+[https://cran.r-project.org/mirrors.html](https://cran.r-project.org/mirrors.html)
+ 
 ## St. Nicolas House Algorithm - Graphical User Interface
 
 ![](img/snha-gui-02.png)
@@ -23,7 +28,7 @@ Experienced users might as well use the Unix script *snha-gui.Rz* mentioned belo
 
 ### Unix / Linux / Mac-OSX
 
-For Unix systems like Linux or Mac-OSX there is as well a single file application: [snha-gui.Rz](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-gui.Rz)
+For Unix systems like Linux or Mac-OSX there is as a single file application: [snha-gui.Rz](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-gui.Rz)
 
 Download this file and either run the file directly from a terminal with Rscript like this
 
@@ -31,9 +36,9 @@ Download this file and either run the file directly from a terminal with Rscript
 Rscript /path/to/snha-gui.Rz
 ```
 
-or make the file executable like this `chmod 755 snha-gui.Rz` and move this
-file to a folder belonging to your PATH variable so that you can execute this
-file from any folder by just typing `snha-gui.Rz` in the terminal. 
+or make the file executable like this `chmod 755 snha-gui.Rz` and move the
+file thereafter to a folder belonging to your PATH variable, so that you can execute this
+file from any folder by just typing `snha-gui.Rz` in the terminal regardless of your current working directory. 
 
 ### Mac-OSX 
 
