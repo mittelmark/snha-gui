@@ -82,9 +82,15 @@ A good place to start is the help page of the *asg.new* function.
 Please use the Github isses page to report problems and to give suggestions:
 
 [https://github.com/mittelmark/snha-gui/issues](https://github.com/mittelmark/snha-gui/issues)
+
 ### ChangeLog
+
 * GUI
-    
+    * Version 0.7.0
+        * adding data filtering
+        * two MDS distances can be used
+        * correlation values can be shown on the graph
+
 * Library:
     * Version 0.8.1
         - adding plot option edge.text
