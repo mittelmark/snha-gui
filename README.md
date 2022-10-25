@@ -56,7 +56,7 @@ output then the GUI but needs the usual knowledge of the R statisical programmin
 You can install the package directly from Github using the following lines of code from within your R-console:
 
 ```
-URL="https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.8.0.tar.gz"
+URL="https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.9.0.tar.gz"
 install.packages(URL,repos=NULL)
 library(asg)
 ```
@@ -82,7 +82,30 @@ A good place to start is the help page of the *asg.new* function.
 Please use the Github isses page to report problems and to give suggestions:
 
 [https://github.com/mittelmark/snha-gui/issues](https://github.com/mittelmark/snha-gui/issues)
-
+### ChangeLog
+* GUI
+    
+* Library:
+    * Version 0.8.1
+        - adding plot option edge.text
+    * Version 0.8.2
+        - adding asg.impute
+        - adding as.list S3 method for writing report with openxlsx
+    * Version 0.8.3
+        - adding asg.mdsplot
+        - adding asg.pcadata
+        - adding asg.impute
+        - adding asg.nd - network deconvolution
+    * Version 0.9.0
+        - adding mgraph methods to create different graphs and data for them using Monte Carlo simulations
+        - adding mgraph.new
+        - adding mgraph.components
+        - adding mgraph.degree  
+        - adding mgraph.d2u
+        - adding mgraph.nodeColors
+        - adding mgraph.u2d
+        - adding plot.mgraph
+ 
 ### License 
 
 The code is released using the MIT license.
