@@ -12,7 +12,7 @@ your computer. To use this software from this page please install R first
 either using your package manager or usually for Windows and Mac-OSX using the download facilities of the R-project:
 [https://cran.r-project.org/mirrors.html](https://cran.r-project.org/mirrors.html)
  
-## St. Nicolas House Algorithm - Graphical User Interface
+## St. Nicolas House Analysis - Graphical User Interface
 
 ![](img/snha-gui-02.png)
 
@@ -24,11 +24,14 @@ file or, for Windows systems, using a Windows installer which can be downloaded 
 
 [snha-install.exe](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-install.exe)
 
-Experienced users might as well use the Unix script *snha-gui.Rz* mentioned below from a terminal.
 
-### Unix / Linux / Mac-OSX
+### Linux / MacOS / FreeBSD
 
-For Unix systems like Linux or Mac-OSX there is as a single file application: [snha-gui.Rz](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-gui.Rz)
+For Unix  systems  like  Linux,  FreeBSD  or MacOS  there is as a single  file
+application: 
+
+- Linux/FreeBSD [snha-gui.Rz](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-gui.Rz)
+- MacOS [snha-gui-macos.Rz](https://github.com/mittelmark/snha-gui/raw/main/bin/snha-gui-macos.Rz)
 
 Download this file and either run the file directly from a terminal with Rscript like this
 
@@ -36,13 +39,17 @@ Download this file and either run the file directly from a terminal with Rscript
 Rscript /path/to/snha-gui.Rz
 ```
 
-or make the file executable like this `chmod 755 snha-gui.Rz` and move the
-file thereafter to a folder belonging to your PATH variable, so that you can execute this
-file from any folder by just typing `snha-gui.Rz` in the terminal regardless of your current working directory. 
+or make the file  executable  like this `chmod 755  snha-gui.Rz` or 
+`chmod 755 snha-gui-macos.Rz`and move the
+file thereafter to a folder belonging to your PATH variable and renaming it to
+`snha-gui` or so , so that you can execute this
+file from any folder by just typing  `snha-gui` in the terminal  regardless
+of your current working directory.  
 
-### Mac-OSX 
 
-Please note, that on Mac-OSX you need usually to have a X-Server installation
+### MacOS
+
+Please note, that on Mac-OS you need usually to have a X-Server installation
 for instance of [XQuartz](https://www.xquartz.org/) and you have to start the application from a
 X-terminal. In some cases you might as well change the first line of the file
 `snha-gui.Rz` so that it points to the right Rscript interpreter on your hard disk.
@@ -56,7 +63,7 @@ output then the GUI but needs the usual knowledge of the R statisical programmin
 You can install the package directly from Github using the following lines of code from within your R-console:
 
 ```
-URL="https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.9.0.tar.gz"
+URL="https://github.com/mittelmark/snha-gui/raw/main/lib/asg_0.10.0.tar.gz"
 install.packages(URL,repos=NULL)
 library(asg)
 ```
@@ -85,13 +92,17 @@ Please use the Github isses page to report problems and to give suggestions:
 
 ### ChangeLog
 
-* GUI
-    * Version 0.7.0
+* __GUI__
+    * Version 0.7.0 (2022-10-27)
         * adding data filtering
         * two MDS distances can be used
         * correlation values can be shown on the graph
-
-* Library:
+    * Version 0.8.0 (2026-01-07)
+        * fixing install issues on Windows
+        * fixing issues with export of Excel sheets
+        * adding support for harmonic centrality giving colored nodes
+        
+* __Library:__
     * Version 0.8.1
         - adding plot option edge.text
     * Version 0.8.2
@@ -111,12 +122,16 @@ Please use the Github isses page to report problems and to give suggestions:
         - adding mgraph.nodeColors
         - adding mgraph.u2d
         - adding plot.mgraph
+    * version 0.10.0
+        - adding support for harmonic centrality measure
+        - adding support for plotting colored nodes based on centrality measures
+        - extending documentation for the package
  
 ### License 
 
 The code is released using the MIT license.
 
-Copyright 2022, Detlef Groth, University of Potsdam, Germany
+Copyright 2022-2026, Detlef Groth, University of Potsdam, Germany
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
